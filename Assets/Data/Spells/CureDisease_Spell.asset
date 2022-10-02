@@ -19,3 +19,5 @@ MonoBehaviour:
   recipe:
   - ingredientType: {fileID: 11400000, guid: aebd4f9e52b8b9d4a8e237c2c7e93a43, type: 2}
     requirement: 1
+  - ingredientType: {fileID: 11400000, guid: 153fcb9e4c6ba0442b0eef837119e46c, type: 2}
+    requirement: 2
