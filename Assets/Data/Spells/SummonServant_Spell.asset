@@ -17,5 +17,7 @@ MonoBehaviour:
     care and look after it's needs lest ye are cursed by their kind.
   sprite: {fileID: 0}
   recipe:
+  - ingredientType: {fileID: 11400000, guid: 90e7348c2523a104782f07acebda52a7, type: 2}
+    requirement: 2
   - ingredientType: {fileID: 11400000, guid: 5e57d5dff4195ef4792eaf291a23d8e7, type: 2}
     requirement: 1

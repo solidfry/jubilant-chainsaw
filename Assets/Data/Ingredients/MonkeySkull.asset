@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265313a0d5f74086b0f2d51437bd18a6, type: 3}
   m_Name: MonkeySkull
   m_EditorClassIdentifier: 
-  name: Frog
+  name: Monkey Skull
   prefab: {fileID: 0}
-  sprite: {fileID: 21300000, guid: b04712fd62c436c4587d7a81a3c6b66c, type: 3}
+  sprite: {fileID: 21300000, guid: fc9cb717aeed122429ae932fc9087fe2, type: 3}
