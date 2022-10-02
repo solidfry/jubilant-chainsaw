@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Frog
   m_EditorClassIdentifier: 
   name: Frog
-  prefab: {fileID: 0}
+  prefab: {fileID: 8798259922296898505, guid: a19acb2d3cac80644809a1be0e5898dc, type: 3}
   sprite: {fileID: 21300000, guid: b04712fd62c436c4587d7a81a3c6b66c, type: 3}

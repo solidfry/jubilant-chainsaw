@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265313a0d5f74086b0f2d51437bd18a6, type: 3}
   m_Name: DragonsTooth
   m_EditorClassIdentifier: 
-  name: Spider
-  prefab: {fileID: 0}
+  name: Dragon's Tooth
+  prefab: {fileID: 6826169466908980794, guid: 820fc4eaa9344964db73965890a30930, type: 3}
   sprite: {fileID: 21300000, guid: f7bb0d1422fe7e84c81c405d9c4fa885, type: 3}

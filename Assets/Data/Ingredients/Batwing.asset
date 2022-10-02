@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Batwing
   m_EditorClassIdentifier: 
   name: Batwing
-  prefab: {fileID: 0}
+  prefab: {fileID: 6826169466908980794, guid: 4ca43f0e88404664884a607242ba72b0, type: 3}
   sprite: {fileID: 21300000, guid: 38ba3ec4cd27a9547b99a3d854d623c8, type: 3}

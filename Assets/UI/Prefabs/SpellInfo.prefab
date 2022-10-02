@@ -131,9 +131,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1xThing
+  m_text: '1 x SnakeVenom
 
-    2xThing'
+    2 x Mushroom
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d, type: 2}
   m_sharedMaterial: {fileID: -3375121324035155020, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d,
@@ -671,8 +673,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cures almost any ailement small or large. But be careful, it is not to
-    be used on small children, lest they turn into a night creature.
+  m_text: Cures almost any ailement small or large. But becareful, it is not to be
+    used on small children, lest they turn into a night creature.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d, type: 2}
   m_sharedMaterial: {fileID: -3375121324035155020, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d,
@@ -874,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306936dd294ae124d9085deeb4b25180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 0}
+  spell: {fileID: 11400000, guid: 208a55ff1b7909d4cac5fa6e5e21eb70, type: 2}
   title: {fileID: 4949883493667749308}
   description: {fileID: 4949883494156817082}
   sideBarTitle: {fileID: 4949883493153506924}

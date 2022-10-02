@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Spider
   m_EditorClassIdentifier: 
   name: Spider
-  prefab: {fileID: 0}
+  prefab: {fileID: 6826169466908980794, guid: dbcdfc8493f45ad44941eb72291431b3, type: 3}
   sprite: {fileID: 21300000, guid: 4d31e8a5cdea9c146aee741aee4474d5, type: 3}

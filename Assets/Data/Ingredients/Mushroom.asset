@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mushroom
   m_EditorClassIdentifier: 
   name: Mushroom
-  prefab: {fileID: 0}
+  prefab: {fileID: 1301078361184772795, guid: 115602107224b474e90ba090ac4a1e4c, type: 3}
   sprite: {fileID: 21300000, guid: e445409dff6d1a94dbc838f37fa487c7, type: 3}
