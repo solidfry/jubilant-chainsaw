@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Ingredients;
+using UnityEngine;
 
 namespace Events
 {
@@ -10,10 +11,17 @@ namespace Events
         public delegate void TimerZero();
         public delegate void ResetTimer();
 
+        public delegate void AddIngredient(Ingredient ingredient);
+        public delegate void RemoveIngredient(Ingredient ingredient);
+
         public static Collect OnCollectablePickedUp;
         public static PlayClip OnAudioCollisionEvent;
         public static StartTimer OnStartTimerEvent;
         public static TimerZero OnTimerZeroEvent;
         public static ResetTimer OnResetTimerEvent;
+        
+        //Cauldron mechanics
+        public static AddIngredient OnIngredientEnterCauldronEvent;
+        public static RemoveIngredient OnIngredientExitCauldronEvent;
     }
 }

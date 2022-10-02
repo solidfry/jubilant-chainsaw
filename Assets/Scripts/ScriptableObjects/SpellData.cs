@@ -13,5 +13,7 @@ namespace ScriptableObjects
         public string description;
         public Sprite sprite;
         [SerializeField] private List<RecipeItem> recipe;
+
+        public List<RecipeItem> Recipe => recipe;
     }
 }

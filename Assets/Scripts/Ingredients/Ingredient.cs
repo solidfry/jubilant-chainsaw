@@ -1,19 +1,24 @@
 ﻿using System;
 using ScriptableObjects.Ingredients;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Ingredients
 {
     public class Ingredient : MonoBehaviour
     {
-        [FormerlySerializedAs("_ingredientType")] [SerializeField] private IngredientType ingredientType;
+        [SerializeField] private IngredientType ingredientType;
         
         [Header("Sprite Settings")]
         [ReadOnly]
         public SpriteRenderer spriteRenderer;
-
         public PolygonCollider2D polyCollider;
+        
+        public IngredientType IngredientType
+        {
+            get => ingredientType;
+            private set => ingredientType = value;
+        }
+
         private void Awake()
         {
             UpdateValues();
