@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7332414d1ff047959e651582bae29b90, type: 3}
+  m_Name: Water_ConstructionMaterial
+  m_EditorClassIdentifier: 
+  name: Water
+  audioClips:
+  - {fileID: 8300000, guid: a10f85a71c1e2b242bf9affedf27d45b, type: 3}
+  - {fileID: 8300000, guid: 110c0bb46c62cb84c8b67dcaa66b3ef3, type: 3}
+  - {fileID: 8300000, guid: d91184d64dd50c541a95193ecdfc22d6, type: 3}
+  - {fileID: 8300000, guid: 22100f605f9c58746a470ebe7f09f469, type: 3}
+  - {fileID: 8300000, guid: eac3f07ca31307340a05c380af4db390, type: 3}
+  - {fileID: 8300000, guid: 2c044e51ae1845b4db8f576b4881354d, type: 3}
+  - {fileID: 8300000, guid: c25a25babcb5c7c46bfb784751dae6a8, type: 3}

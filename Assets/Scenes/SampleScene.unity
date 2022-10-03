@@ -5510,6 +5510,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7817110097198040114, guid: 6b36cc3f79d4a5f41a45c3bccb29b8b3,
+        type: 3}
+      propertyPath: constructionMaterial
+      value: 
+      objectReference: {fileID: 11400000, guid: d52f0f125e151fa46b825aff309ee58e,
+        type: 2}
     - target: {fileID: 8302204114257347873, guid: 6b36cc3f79d4a5f41a45c3bccb29b8b3,
         type: 3}
       propertyPath: m_Color.b
