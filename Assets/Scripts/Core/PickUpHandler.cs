@@ -86,6 +86,7 @@ namespace Core
             if (pickedObject.GetComponent<Rigidbody2D>())
             {
                 Rigidbody2D objectRigidBody = pickedObject.GetComponent<Rigidbody2D>();
+                objectRigidBody.bodyType = RigidbodyType2D.Dynamic;
                 objectRigidBody.transform.parent = holdParent.transform;
                 heldObject = pickedObject;
             }

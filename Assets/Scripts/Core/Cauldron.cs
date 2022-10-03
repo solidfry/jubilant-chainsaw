@@ -1,22 +1,31 @@
-using System;
 using System.Collections.Generic;
 using Events;
 using Ingredients;
-//using ScriptableObjects;
 using UnityEngine;
 
 namespace Core
 {
     public class Cauldron : Receptacle
     {
-        public List<Ingredient> _ingredients;
+        [SerializeField] private List<Ingredient> ingredients;
+
+        private void OnEnable()
+        {
+            GameEvents.OnDestroyCauldronItemsEvent += DestroyItemsInCauldron;
+        }
+        
+        private void OnDisable()
+        {
+            GameEvents.OnDestroyCauldronItemsEvent -= DestroyItemsInCauldron;
+        }
+
         protected override void OnTriggerEnter2D(Collider2D other)
         {
             base.OnTriggerEnter2D(other);
             if(other.GetComponent<Ingredient>())
             {
                 GameEvents.OnIngredientEnterCauldronEvent?.Invoke(other.GetComponent<Ingredient>());
-                _ingredients.Add(other.GetComponent<Ingredient>());
+                ingredients.Add(other.GetComponent<Ingredient>());
             }
         }
 
@@ -25,17 +34,18 @@ namespace Core
             if(other.GetComponent<Ingredient>())
             {
                 GameEvents.OnIngredientExitCauldronEvent?.Invoke(other.GetComponent<Ingredient>());
-                _ingredients.Remove(other.GetComponent<Ingredient>());
+                ingredients.Remove(other.GetComponent<Ingredient>());
             }
         }
 
         void DestroyItemsInCauldron()
         {
-            foreach (var i in _ingredients)
+            var children = this.GetComponentsInChildren<Transform>();
+            foreach (var i in children)
             {
-                Destroy(i.gameObject);
+                if (i != children[0])
+                    Destroy(i.gameObject, .5f);
             }
-            _ingredients.Clear();
         }
     }
 }

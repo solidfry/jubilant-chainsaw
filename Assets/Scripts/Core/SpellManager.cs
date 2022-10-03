@@ -42,14 +42,21 @@ namespace Core
 
         public void Conjure()
         {
-            var cauldronIngredientNames = ingredientsInCauldron.Select(x => x.name).ToArray();
+            var cauldronIngredientNames = ingredientsInCauldron.Select(x => x.name).ToList();
             var filterSpells = spells.ListOfSpells.Where(x => x.Recipe.All(y => cauldronIngredientNames.Contains(y.name))).ToList();
+            var spellToConjure = filterSpells.Count > 0 ? filterSpells[0] : null;
 
-            foreach (var s in filterSpells)
+            if(spellToConjure != null)
             {
-                var spellObject = Instantiate(spellItemPrefab);
-                spellObject.GetComponent<Spell>().SpellType = s;
+                var spellObject = Instantiate(spellItemPrefab, new Vector3(0,3f), Quaternion.identity);
+                spellObject.GetComponent<Spell>().SpellType = spellToConjure;
+                
+                cauldronIngredientNames.Clear();
+                filterSpells.Clear();
+                GameEvents.OnDestroyCauldronItemsEvent?.Invoke();
+                ingredientsInCauldron.Clear();
             }
+            
         }
     }
 }
