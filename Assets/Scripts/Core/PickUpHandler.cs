@@ -10,7 +10,6 @@ namespace Core
         private GameObject heldObject;
 
         [SerializeField]
-//    private Transform holdParent;
         private Rigidbody2D holdParent;
         [SerializeField]
         private float moveForce = 250f;

@@ -1,14 +1,21 @@
 using Ingredients;
+using ScriptableObjects;
 using UnityEngine;
 
-public abstract class Receptacle : MonoBehaviour
+namespace Abstracts
 {
-    protected virtual void OnTriggerEnter2D(Collider2D other)
+    public abstract class Receptacle : MonoBehaviour
     {
-        if (other.GetComponent<Ingredient>())
-        {
-            other.transform.parent = transform;
-        }
-    }
+        [SerializeField] private ConstructionMaterialType constructionMaterial;
 
+        public ConstructionMaterialType ConstructionMaterial => constructionMaterial;
+        protected virtual void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.GetComponent<Ingredient>())
+            {
+                other.transform.parent = transform;
+            }
+        }
+
+    }
 }

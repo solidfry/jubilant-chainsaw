@@ -22,9 +22,6 @@ namespace Core
             _rb.bodyType = RigidbodyType2D.Kinematic;
         }
 
-        private void Update()
-        {
-            
-        }
+       
     }
 }
