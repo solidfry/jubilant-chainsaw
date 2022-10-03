@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301078361184772790}
   - component: {fileID: 1301078361184772791}
+  - component: {fileID: -2486337917804958680}
   - component: {fileID: 1301078361184772789}
   - component: {fileID: 1301078361184772788}
   - component: {fileID: 1301078361184772784}
@@ -50,6 +51,21 @@ MonoBehaviour:
   ingredientType: {fileID: 11400000, guid: 153fcb9e4c6ba0442b0eef837119e46c, type: 2}
   spriteRenderer: {fileID: 1301078361184772789}
   polyCollider: {fileID: 1301078361184772788}
+--- !u!114 &-2486337917804958680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301078361184772795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10d7ae251774d82824562edb31b3734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constructionMaterial: {fileID: 11400000, guid: 5b22bf5bd602ea041986ca6c9bb1ae26,
+    type: 2}
+  clipPlayWaitTime: 0.5
 --- !u!212 &1301078361184772789
 SpriteRenderer:
   m_ObjectHideFlags: 0
