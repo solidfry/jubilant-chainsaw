@@ -17,7 +17,4 @@ MonoBehaviour:
     to be used on small children, lest they turn into a night creature.
   sprite: {fileID: 0}
   recipe:
-  - ingredientType: {fileID: 11400000, guid: aebd4f9e52b8b9d4a8e237c2c7e93a43, type: 2}
-    requirement: 1
-  - ingredientType: {fileID: 11400000, guid: 153fcb9e4c6ba0442b0eef837119e46c, type: 2}
-    requirement: 2
+  - {fileID: 11400000, guid: 8457540915628e244a0f09c8d6cf8a46, type: 2}

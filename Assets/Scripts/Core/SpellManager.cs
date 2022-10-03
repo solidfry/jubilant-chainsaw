@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Events;
 using Ingredients;
-using Recipe;
 using ScriptableObjects;
+using ScriptableObjects.Ingredients;
 using UnityEngine;
 
 namespace Core
@@ -10,8 +11,9 @@ namespace Core
     public class SpellManager : MonoBehaviour
     {
         [SerializeField] 
-        private List<RecipeItem> ingredientsInCauldron;
+        private List<IngredientType> ingredientsInCauldron;
         [SerializeField] private SpellList spells;
+        [SerializeField] private GameObject spellItemPrefab;
 
         private void OnEnable()
         {
@@ -27,24 +29,26 @@ namespace Core
 
         public void Add(Ingredient ingredient)
         {
-            ingredientsInCauldron.Add(new RecipeItem(ingredient.IngredientType, 1));
+            ingredientsInCauldron.Add(ingredient.IngredientType);
+            Conjure();
+//            GameEvents.OnDestroyCauldronItemsEvent?.Invoke();
         }
 
         public void Remove(Ingredient ingredient)
         {
-            RecipeItem i = ingredientsInCauldron.Find(i => i.ingredientType == ingredient.IngredientType);
+            IngredientType i = ingredientsInCauldron.Find(i => i == ingredient.IngredientType);
             ingredientsInCauldron.Remove(i);
         }
 
         public void Conjure()
         {
-            if (spells.ListOfSpells.Find(i => i.Recipe == ingredientsInCauldron))
+            var cauldronIngredientNames = ingredientsInCauldron.Select(x => x.name).ToArray();
+            var filterSpells = spells.ListOfSpells.Where(x => x.Recipe.All(y => cauldronIngredientNames.Contains(y.name))).ToList();
+
+            foreach (var s in filterSpells)
             {
-//                foreach ()
-//                {
-//                    
-//                }
-                //Instantiate the spell gameObject
+                var spellObject = Instantiate(spellItemPrefab);
+                spellObject.GetComponent<Spell>().SpellType = s;
             }
         }
     }

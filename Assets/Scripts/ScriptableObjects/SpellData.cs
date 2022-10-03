@@ -12,8 +12,8 @@ namespace ScriptableObjects
         [TextArea]
         public string description;
         public Sprite sprite;
-        [SerializeField] private List<RecipeItem> recipe;
+        [SerializeField] private List<IngredientType> recipe;
 
-        public List<RecipeItem> Recipe => recipe;
+        public List<IngredientType> Recipe => recipe;
     }
 }

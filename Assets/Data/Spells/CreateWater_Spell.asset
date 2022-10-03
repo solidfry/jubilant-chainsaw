@@ -17,5 +17,4 @@ MonoBehaviour:
     a relative amount of liquid to the scale of the concetration. Be wary.
   sprite: {fileID: 0}
   recipe:
-  - ingredientType: {fileID: 11400000, guid: 153fcb9e4c6ba0442b0eef837119e46c, type: 2}
-    requirement: 1
+  - {fileID: 11400000, guid: 9bab3214f4bab2c42b467b8b2f6f4a9a, type: 2}

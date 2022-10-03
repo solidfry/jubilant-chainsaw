@@ -17,5 +17,4 @@ MonoBehaviour:
     named during casting.
   sprite: {fileID: 0}
   recipe:
-  - ingredientType: {fileID: 11400000, guid: 9bab3214f4bab2c42b467b8b2f6f4a9a, type: 2}
-    requirement: 1
+  - {fileID: 11400000, guid: 90e7348c2523a104782f07acebda52a7, type: 2}

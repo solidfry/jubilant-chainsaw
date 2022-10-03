@@ -13,6 +13,7 @@ namespace Events
 
         public delegate void AddIngredient(Ingredient ingredient);
         public delegate void RemoveIngredient(Ingredient ingredient);
+        public delegate void DestroyCauldronItems();
 
         public static Collect OnCollectablePickedUp;
         public static PlayClip OnAudioCollisionEvent;
@@ -23,5 +24,6 @@ namespace Events
         //Cauldron mechanics
         public static AddIngredient OnIngredientEnterCauldronEvent;
         public static RemoveIngredient OnIngredientExitCauldronEvent;
+        public static DestroyCauldronItems OnDestroyCauldronItemsEvent;
     }
 }

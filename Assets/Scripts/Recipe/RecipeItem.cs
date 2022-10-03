@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Recipe
 {
     [Serializable]
-    public struct RecipeItem
+    public struct RecipeItem : IEquatable<RecipeItem>
     {
         
         [SerializeField] public IngredientType ingredientType;
@@ -15,6 +15,11 @@ namespace Recipe
         {
             this.ingredientType = ingredientType;
             this.requirement = requirement;
+        }
+        
+        public bool Equals(RecipeItem other)
+        {
+            return this.ingredientType.name == other.ingredientType.name && this.requirement == other.requirement;
         }
     }
 }

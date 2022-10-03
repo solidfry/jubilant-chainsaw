@@ -16,7 +16,7 @@ namespace Ingredients
         public IngredientType IngredientType
         {
             get => ingredientType;
-            private set => ingredientType = value;
+            set => ingredientType = value;
         }
 
         private void Awake()

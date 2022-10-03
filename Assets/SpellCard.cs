@@ -30,7 +30,7 @@ public class SpellCard : MonoBehaviour
             sideBarDescription.text = null;
             foreach (var ingredient in spell.Recipe)
             {
-                sideBarDescription.text += $"{ingredient.requirement} x {ingredient.ingredientType.name}\n";
+                sideBarDescription.text += $"{ingredient.name}\n";
             }
         }
     }

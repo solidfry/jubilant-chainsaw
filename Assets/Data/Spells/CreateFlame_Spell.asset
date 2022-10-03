@@ -17,5 +17,5 @@ MonoBehaviour:
     symbols upon this scroll.
   sprite: {fileID: 0}
   recipe:
-  - ingredientType: {fileID: 11400000, guid: edf36dafcab872443a6e251b99743322, type: 2}
-    requirement: 1
+  - {fileID: 11400000, guid: edf36dafcab872443a6e251b99743322, type: 2}
+  - {fileID: 11400000, guid: 153fcb9e4c6ba0442b0eef837119e46c, type: 2}

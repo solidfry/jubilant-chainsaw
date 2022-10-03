@@ -57,7 +57,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 16
+  m_Spacing: 8
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -137,8 +137,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d, type: 2}
-  m_sharedMaterial: {fileID: -3375121324035155020, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d,
+  m_fontAsset: {fileID: 11400000, guid: cc688f957b4221d468a3c3a069a4a5eb, type: 2}
+  m_sharedMaterial: {fileID: 8949336921726978985, guid: cc688f957b4221d468a3c3a069a4a5eb,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -273,8 +273,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ingredients
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 71e49fbe1663e3245bf4296c4fae10da, type: 2}
-  m_sharedMaterial: {fileID: -964546387141906600, guid: 71e49fbe1663e3245bf4296c4fae10da,
+  m_fontAsset: {fileID: 11400000, guid: 34ea37a5ae81591409a0d44052a21ff4, type: 2}
+  m_sharedMaterial: {fileID: -1026120950121741638, guid: 34ea37a5ae81591409a0d44052a21ff4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: -4
+  m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -474,8 +474,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cure Disease
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 71e49fbe1663e3245bf4296c4fae10da, type: 2}
-  m_sharedMaterial: {fileID: -964546387141906600, guid: 71e49fbe1663e3245bf4296c4fae10da,
+  m_fontAsset: {fileID: 11400000, guid: 34ea37a5ae81591409a0d44052a21ff4, type: 2}
+  m_sharedMaterial: {fileID: -1026120950121741638, guid: 34ea37a5ae81591409a0d44052a21ff4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -500,8 +500,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -596,10 +596,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 4
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 16
+  m_Spacing: 8
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -676,8 +676,8 @@ MonoBehaviour:
   m_text: Cures almost any ailement small or large. But becareful, it is not to be
     used on small children, lest they turn into a night creature.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d, type: 2}
-  m_sharedMaterial: {fileID: -3375121324035155020, guid: 9cc9ca3adc4c1da4ebcb56bccd5d503d,
+  m_fontAsset: {fileID: 11400000, guid: cc688f957b4221d468a3c3a069a4a5eb, type: 2}
+  m_sharedMaterial: {fileID: 8949336921726978985, guid: cc688f957b4221d468a3c3a069a4a5eb,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
