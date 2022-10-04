@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10d7ae251774d82824562edb31b3734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  constructionMaterial: {fileID: 11400000, guid: 5b22bf5bd602ea041986ca6c9bb1ae26,
+  constructionMaterial: {fileID: 11400000, guid: 0169e033a10b0944593849200873eb88,
     type: 2}
   clipPlayWaitTime: 0.5
 --- !u!212 &1301078361184772789
