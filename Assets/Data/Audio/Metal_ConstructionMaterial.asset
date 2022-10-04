@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7332414d1ff047959e651582bae29b90, type: 3}
   m_Name: Metal_ConstructionMaterial
   m_EditorClassIdentifier: 
-  name: Glass
+  name: Metal
   audioClips:
-  - {fileID: 8300000, guid: 74156f5fe7277fc40b3bb0c7c84636ba, type: 3}
-  - {fileID: 8300000, guid: 971ee6d8d66766943bda667d1c557733, type: 3}
-  - {fileID: 8300000, guid: 168e1d71103c41546b88d187e03e373a, type: 3}
-  - {fileID: 8300000, guid: 50680c6b9c61caf4fb19dbc9722eda89, type: 3}
-  - {fileID: 8300000, guid: 6656faab1d57e224c87ce1fac92c26c4, type: 3}
+  - {fileID: 8300000, guid: 76fcdf0c395e5414ebc77230863b7d41, type: 3}
+  - {fileID: 8300000, guid: a6740ec99654a5b4795da810a60117d6, type: 3}
+  - {fileID: 8300000, guid: 02126c85de3a4fe4d90258a72cbdec42, type: 3}
+  - {fileID: 8300000, guid: d744c3c2ce6c5984aa3dcee9a7206904, type: 3}
+  - {fileID: 8300000, guid: 0dad756a584c42044a2259782f542c10, type: 3}

@@ -1,6 +1,7 @@
 ﻿using System;
 using ScriptableObjects;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Core
@@ -9,7 +10,7 @@ namespace Core
     {
         [ReadOnly][SerializeField] private SpellData spellType;
         private Rigidbody2D _rb;
-        private bool hasBeenPickedUp;
+        
         public SpellData SpellType
         {
             get => spellType;
@@ -21,7 +22,6 @@ namespace Core
             _rb = GetComponent<Rigidbody2D>();
             _rb.bodyType = RigidbodyType2D.Kinematic;
         }
-
-       
+        
     }
 }

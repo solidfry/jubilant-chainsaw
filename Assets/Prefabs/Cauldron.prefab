@@ -61,6 +61,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1607eacb2fb84cc4eb187852102f996e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  constructionMaterial: {fileID: 11400000, guid: d52f0f125e151fa46b825aff309ee58e,
+    type: 2}
+  ingredients: []
 --- !u!1 &8302204113538629702
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +75,7 @@ GameObject:
   - component: {fileID: 8302204113538629704}
   - component: {fileID: 8302204113538629705}
   - component: {fileID: 7923598205667108436}
+  - component: {fileID: 1282050844}
   m_Layer: 0
   m_Name: Cauldron-back
   m_TagString: Untagged
@@ -187,6 +191,21 @@ PolygonCollider2D:
       - {x: 1.0078125, y: -1.515625}
       - {x: 1.46875, y: -0.1015625}
       - {x: 1.46875, y: 1.3515625}
+--- !u!114 &1282050844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302204113538629702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10d7ae251774d82824562edb31b3734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constructionMaterial: {fileID: 11400000, guid: 08cc9c047e540ff4b8fa2a3f2764e99d,
+    type: 2}
+  clipPlayWaitTime: 0.5
 --- !u!1 &8302204114257347870
 GameObject:
   m_ObjectHideFlags: 0
