@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdf4366b506eb140a9ce1fd36d3830c, type: 3}
+  m_Name: Dialogue_CreateWater
+  m_EditorClassIdentifier: 
+  list:
+  - The brook has gone dry and now my ducks have no where to swim. Their little flappy
+    feet will dry out.
+  - I am sick and tired of getting up early to bring water from the well. I need
+    some rest. Can you help me with my problem?
+  - A cow died in the river near my house, and I am unable to get water for my family.
+    Are you able to help me?

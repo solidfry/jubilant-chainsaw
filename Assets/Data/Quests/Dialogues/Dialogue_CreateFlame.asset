@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdf4366b506eb140a9ce1fd36d3830c, type: 3}
+  m_Name: Dialogue_CreateFlame
+  m_EditorClassIdentifier: 
+  list:
+  - Winter is coming... My house is much too cold! Please help me keep my house warm.
+  - The local forest has been calling me names, and quite frankly, I'm sick of it.
+    What should I do?
+  - My blacksmith forge won't stay lit. I will go bankrupt if I am unable to work.
+    Help!

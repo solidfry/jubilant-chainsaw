@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdf4366b506eb140a9ce1fd36d3830c, type: 3}
+  m_Name: Dialogue_SummonServant
+  m_EditorClassIdentifier: 
+  list:
+  - My Grammy is too sick to do chores around her hut, is there anything you can
+    give me to help with that?
+  - My butler has gone missing. I can't be bothered conducting any sort of investigation
+    so I'd much rather replace him.
+  - Recently I've been unable to keep on top of all my house hold tasks. The dishes
+    haven't been washed for weeks.

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdf4366b506eb140a9ce1fd36d3830c, type: 3}
+  m_Name: Dialogue_SpeakWithAnimals
+  m_EditorClassIdentifier: 
+  list:
+  - I am inundated with scurrying little furry critters in my basement. I need help
+    getting rid of them, but I can't speak rat!
+  - My cow's won't leave their field and they are running out of food. Help!
+  - I am sick of the birds waking me up in the morning... what can you give me to
+    help? Maybe if I could convince them to leave...
