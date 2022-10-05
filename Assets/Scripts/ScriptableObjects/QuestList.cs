@@ -10,6 +10,6 @@ namespace ScriptableObjects
 
         public List<QuestData> ListOfQuests => listOfQuests;
 
-        public QuestData GetRandomQuest() => listOfQuests[Random.Range(0, listOfQuests.Count)];
+        public QuestData GetRandomQuest() => listOfQuests[Random.Range(0, ListOfQuests.Count - 1)];
     }
 }

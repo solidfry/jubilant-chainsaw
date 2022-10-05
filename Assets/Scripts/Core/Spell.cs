@@ -1,7 +1,4 @@
-﻿using System;
-using ScriptableObjects;
-using Unity.Mathematics;
-using Unity.VisualScripting;
+﻿using ScriptableObjects;
 using UnityEngine;
 
 namespace Core

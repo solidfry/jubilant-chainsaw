@@ -1,4 +1,5 @@
 ﻿using Ingredients;
+using ScriptableObjects;
 using UnityEngine;
 
 namespace Events
@@ -11,9 +12,7 @@ namespace Events
         public delegate void TimerZero();
         public delegate void ResetTimer();
 
-        public delegate void AddIngredient(Ingredient ingredient);
-        public delegate void RemoveIngredient(Ingredient ingredient);
-        public delegate void DestroyCauldronItems();
+        
 
         public static Collect OnCollectablePickedUp;
         public static PlayClip OnAudioCollisionEvent;
@@ -22,8 +21,22 @@ namespace Events
         public static ResetTimer OnResetTimerEvent;
         
         //Cauldron mechanics
+        public delegate void AddIngredient(Ingredient ingredient);
+        public delegate void RemoveIngredient(Ingredient ingredient);
+        public delegate void DestroyCauldronItems();
+        
         public static AddIngredient OnIngredientEnterCauldronEvent;
         public static RemoveIngredient OnIngredientExitCauldronEvent;
         public static DestroyCauldronItems OnDestroyCauldronItemsEvent;
+        
+        //Quest Events
+        public delegate void GetNewQuest(SpellData spellData, string dialogue);
+        public delegate void QuestCompleted();
+
+        public delegate void Celebration();
+        
+        public static GetNewQuest OnGetNewQuestEvent;
+        public static QuestCompleted OnQuestCompletedEvent;
+        public static Celebration OnCelebrationEvent;
     }
 }
