@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameComplete.unity
     guid: 31e5e5632dcd80f45b7ec8fc4d300d18
+  - enabled: 1
+    path: Assets/Scenes/GameFail.unity
+    guid: 861fb95314ecc2245ae37473a62d15a4
   m_configObjects: {}

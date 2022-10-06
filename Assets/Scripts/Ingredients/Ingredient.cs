@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using DG.Tweening;
+using Events;
 using ScriptableObjects.Ingredients;
 using UnityEngine;
 
@@ -84,5 +85,9 @@ namespace Ingredients
             StartCoroutine(DelayedDestroy());
         }
 
+        private void OnDestroy()
+        {
+            GameEvents.OnIngredientDestroyedEvent?.Invoke();
+        }
     }
 }

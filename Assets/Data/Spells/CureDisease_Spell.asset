@@ -18,3 +18,4 @@ MonoBehaviour:
   sprite: {fileID: 0}
   recipe:
   - {fileID: 11400000, guid: 8457540915628e244a0f09c8d6cf8a46, type: 2}
+  - {fileID: 11400000, guid: aebd4f9e52b8b9d4a8e237c2c7e93a43, type: 2}

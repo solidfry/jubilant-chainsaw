@@ -2,6 +2,7 @@
 using DG.Tweening;
 using ScriptableObjects;
 using UnityEngine;
+using TMPro;
 
 namespace Core
 {
@@ -9,28 +10,33 @@ namespace Core
     {
         [ReadOnly][SerializeField] private SpellData spellType;
         private Rigidbody2D _rb;
+        public TMP_Text titleText;
 
-        SpriteRenderer sr;
-        Vector3 originalScale;
-
+        SpriteRenderer _sr;
+        Vector3 _originalScale;
 
         public SpellData SpellType
         {
             get => spellType;
-            set => spellType = value;
+            set
+            {
+                spellType = value; 
+                titleText.text = spellType.name;
+            }
         }
 
         private void Awake()
         {
-            sr = GetComponent<SpriteRenderer>();
-            originalScale = transform.localScale;
+            _sr = GetComponent<SpriteRenderer>();
+            _originalScale = transform.localScale;
         }
         private void OnEnable()
         {
             transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            transform.DOScale(originalScale, .5f);
+            transform.DOScale(_originalScale, .5f).SetEase(Ease.OutBounce);
             _rb = GetComponent<Rigidbody2D>();
             _rb.bodyType = RigidbodyType2D.Kinematic;
+            
         }
 
         public override IEnumerator DelayedDestroy()
@@ -39,8 +45,9 @@ namespace Core
             var particle = Instantiate(particleOnDestroy, this.transform.position, Quaternion.identity);
             Debug.Log("Particle is instantiated");
             this.transform.DOScale(Vector3.zero, animationFadeOutTime);
-            sr.DOFade(0, animationFadeOutTime);
+            _sr.DOFade(0, animationFadeOutTime);
             Destroy(particle, 2f);
+            Destroy(this.gameObject, 2.1f);
         }
 
         public override void DoDestroy()

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using Events;
 using Ingredients;
@@ -40,6 +41,13 @@ namespace Core
             ingredientsInCauldron.Remove(i);
         }
 
+        IEnumerator DelayConjure(SpellData spellData)
+        {
+            yield return new WaitForSeconds(1f);
+            var spellObject = Instantiate(spellItemPrefab, new Vector3(0,1f), Quaternion.identity);
+            spellObject.GetComponent<Spell>().SpellType = spellData;
+        }
+
         public void Conjure()
         {
             var cauldronIngredientNames = ingredientsInCauldron.Select(x => x.name).ToList();
@@ -48,8 +56,9 @@ namespace Core
 
             if(spellToConjure != null)
             {
-                var spellObject = Instantiate(spellItemPrefab, new Vector3(0,3f), Quaternion.identity);
-                spellObject.GetComponent<Spell>().SpellType = spellToConjure;
+                StartCoroutine(DelayConjure(spellToConjure));
+//                var spellObject = Instantiate(spellItemPrefab, new Vector3(0,1f), Quaternion.identity);
+//                spellObject.GetComponent<Spell>().SpellType = spellToConjure;
                 
                 cauldronIngredientNames.Clear();
                 filterSpells.Clear();
