@@ -839,7 +839,7 @@ MonoBehaviour:
   allQuests: {fileID: 11400000, guid: e835a514d7a4ae04a88619c48481c89a, type: 2}
   questData: {fileID: 0}
   expectedSpell: {fileID: 0}
-  toCompleteLevel: 0
+  toCompleteLevel: 3
   customersServed: 0
 --- !u!4 &442094104
 Transform:
