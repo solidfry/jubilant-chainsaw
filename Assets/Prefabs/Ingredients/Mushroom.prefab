@@ -51,6 +51,8 @@ MonoBehaviour:
   ingredientType: {fileID: 11400000, guid: 153fcb9e4c6ba0442b0eef837119e46c, type: 2}
   spriteRenderer: {fileID: 1301078361184772789}
   polyCollider: {fileID: 1301078361184772788}
+  particleOnDestroy: {fileID: 177934, guid: 9a4643fef181ec64e961b4579ad24a5f, type: 3}
+  animationFadeOutTime: 0.25
 --- !u!114 &-2486337917804958680
 MonoBehaviour:
   m_ObjectHideFlags: 0

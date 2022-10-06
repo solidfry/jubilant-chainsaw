@@ -2,6 +2,7 @@
 using Events;
 using ScriptableObjects;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Core
 {
@@ -10,38 +11,54 @@ namespace Core
         [SerializeField] private QuestList allQuests;
         [SerializeField] private QuestData questData;
         [SerializeField] private SpellData expectedSpell;
-        
+        [SerializeField] private int toCompleteLevel;
+        [ReadOnly][SerializeField] private int customersServed;
+
         private void Start()
         {
-            if(allQuests == null)
+            if (allQuests == null)
                 return;
-            
+
             GetNewQuest();
         }
-        
+
         private void OnEnable()
         {
+            GameEvents.OnCelebrationEvent += IncrementCustomers;
             GameEvents.OnQuestCompletedEvent += SetQuest;
         }
 
         private void OnDisable()
         {
+            GameEvents.OnCelebrationEvent -= IncrementCustomers;
             GameEvents.OnQuestCompletedEvent -= SetQuest;
         }
-        
+
         private void SetQuest() => GetNewQuest();
-        
+
         private void GetNewQuest()
         {
-            var newQuest = allQuests.GetRandomQuest();
-            questData = newQuest;
-            
-            if(newQuest is not null)
+            if (customersServed == toCompleteLevel)
             {
-                expectedSpell = newQuest.QuestSolution;
-                var dialogue = newQuest.GetRandomDialogue();
-                GameEvents.OnGetNewQuestEvent?.Invoke(expectedSpell, dialogue);
+                SceneManager.LoadScene(2, LoadSceneMode.Additive);
             }
+            else
+            {
+                var newQuest = allQuests.GetRandomQuest();
+                questData = newQuest;
+
+                if (newQuest is not null)
+                {
+                    expectedSpell = newQuest.QuestSolution;
+                    var dialogue = newQuest.GetRandomDialogue();
+                    GameEvents.OnGetNewQuestEvent?.Invoke(expectedSpell, dialogue);
+                }
+            }
+        }
+
+        private void IncrementCustomers()
+        {
+            customersServed++;
         }
     }
 }

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2821495401818921630}
-  - component: {fileID: 8130833531906797763}
   - component: {fileID: -5814678334028444633}
+  - component: {fileID: 8130833531906797763}
   - component: {fileID: 1174384847275821641}
   - component: {fileID: 5105443963465663549}
   m_Layer: 0
@@ -35,6 +35,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5814678334028444633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2279654418996426957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c5138a609948a9b9a28cbd5724a180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellType: {fileID: 0}
+  particleOnDestroy: {fileID: 137586, guid: 0a73ef3872695c14c87225f786afcf7a, type: 3}
 --- !u!212 &8130833531906797763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,19 +101,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-5814678334028444633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2279654418996426957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c5138a609948a9b9a28cbd5724a180, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spellType: {fileID: 0}
 --- !u!50 &1174384847275821641
 Rigidbody2D:
   serializedVersion: 4
